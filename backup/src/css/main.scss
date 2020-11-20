@@ -1,0 +1,290 @@
+/* ---------------RESET CSS-------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body, h1, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl,
+dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Set core body defaults */
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+/* ---------------END RESET CSS-------------------- */
+// ----------------------ICONS---------------------
+
+@font-face {
+  font-family: 'lists';
+  src:  url('./assets/fonts/font/lists.eot?76535332');
+  src:  url('./assets/fonts/font/lists.eot?76535332#iefix') format('embedded-opentype'),
+        url('./assets/fonts/font/lists.woff2?76535332') format('woff2'),
+        url('./assets/fonts/font/lists.woff?76535332') format('woff'),
+        url('./assets/fonts/font/lists.ttf?76535332') format('truetype'),
+        url('./assets/fonts/font/lists.svg?76535332#lists') format('svg'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "lists";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  // line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}
+
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-heart-empty:before { content: '\2661'; } /* '♡' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-truck-1:before { content: '\e02e'; } /* '' */
+.icon-check:before { content: '\e0a6'; } /* '' */
+.icon-sort-numeric-outline:before { content: '\e0ec'; } /* '' */
+.icon-menu:before { content: '\e0fe'; } /* '' */
+.icon-cancel-outline:before { content: '\e108'; } /* '' */
+.icon-cancel:before { content: '\e109'; } /* '' */
+.icon-vkontakte-1:before { content: '\e10e'; } /* '' */
+.icon-volume-off:before { content: '\e117'; } /* '' */
+.icon-volume-low:before { content: '\e119'; } /* '' */
+.icon-arrows-cw:before { content: '\e760'; } /* '' */
+.icon-phone-squared:before { content: '\f098'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
+.icon-help:before { content: '\f128'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-cc-visa:before { content: '\f1f0'; } /* '' */
+.icon-cc-mastercard:before { content: '\f1f1'; } /* '' */
+.icon-copyright:before { content: '\f1f9'; } /* '' */
+.icon-credit-card-alt:before { content: '\f283'; } /* '' */
+.icon-thermometer-3:before { content: '\f2c8'; } /* '' */
+.icon-window-close:before { content: '\f2d3'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-twitter-1:before { content: '\f309'; } /* '' */
+.icon-gift:before { content: '🎁'; } /* '\1f381' */
+.icon-credit-card:before { content: '💳'; } /* '\1f4b3' */
+.icon-truck:before { content: '🚚'; } /* '\1f69a' */
+
+
+/* ---------------START STYLE CSS----------------- */
+html{
+  font-size: 16px;
+}
+body {
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1250px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* ---------------HEADER-------------------- */
+
+.header{
+  width: 100%;
+  height: 7vw;
+  @include display_flex();
+  background-color: rgb(33, 201, 243);
+}
+
+.header__logo{
+  width: 20%;
+  @include display_flex();
+  padding-left: 3%
+}
+
+.header__logo__img{
+  width: 25%;
+}
+
+.header__logo__h1{
+  font-family: $font-family;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+nav 
+{ background-color: rgb(33, 201, 243); }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .4s ease-in-out;
+}
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #d2d2d2;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+  color: #767676;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Exo 2', sans-serif;
+}
+.topmenu li a:hover { color: #c0a97a; }
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-right: 50px;
+  background: #fafafa;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 12px;
+  color: #484848;
+  font-family: $font-family;
+  font-size: 1rem;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.namigazugtum {
+    position: relative;
+    display: inline-block;
+    width: 1.24em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fffbfb;
+    border-bottom: 0.2em solid #fffcfc;
+    text-shadow: 0 1px 0 #151414;
+    background-color: rgb(33, 201, 243);
+  }
+  
+  .namigazugtum:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #f7efef;
+  }
+
+  .menu_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu_icon span{
+    background-color: #151414;
+  }
+
+  .main__wrapper{
+    
+  }
+
+
+
+    /* Фиксированный боковых навигационных ссылок, полной высоты */
+/* .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}*/

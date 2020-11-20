@@ -1,0 +1,8 @@
+$font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+@mixin display_flex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* ---------------RESET CSS-------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Set core body defaults */
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+/* ---------------END RESET CSS-------------------- */
+/* ---------------START STYLE CSS----------------- */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 1250px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* ---------------HEADER-------------------- */
+.header {
+  width: 100%;
+  height: 7vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__logo {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__logo__img {
+  width: 25%;
+}
+
+.header__logo__h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+/* /* @media (prefers-reduced-motion: reduce) {
+  /* /* {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
+/* Стиль кнопок вкладок */
+.main__shopfront__button {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Изменение цвета фона кнопок при наведении курсора */
+.main__shopfront__button:hover {
+  background-color: #777;
+}
+
+/* Установка стилей по умолчанию для содержимого вкладки */
+.main__shopfront__card__wrapper {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Стиль каждого содержимого вкладки индивидуально */
+#adult {
+  background-color: red;
+}
+
+#kids {
+  background-color: green;
+}
+
+#slippers {
+  background-color: blue;
+}
+
+/* Фиксированный боковых навигационных ссылок, полной высоты */
+/* .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Стиль боковых навигационных ссылок и раскрывающейся кнопки */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* При наведении курсора мыши */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Основное содержание */
+.main {
+  margin-left: 200px;
+  /* То же, что и ширина боковой навигации */
+  font-size: 20px;
+  /* Увеличенный текст для включения прокрутки */
+  padding: 0px 10px;
+}
+
+/* Добавить активный класс для кнопки активного выпадающего списка */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Выпадающий контейнер (по умолчанию скрыт). Необязательно: добавьте более светлый цвет фона и некоторые левые отступы, чтобы изменить дизайн выпадающего содержимого */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Необязательно: стиль курсора вниз значок */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/*# sourceMappingURL=index.css.map */

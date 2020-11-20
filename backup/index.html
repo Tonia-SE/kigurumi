@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="./assets/icons/logo.svg">
+            <h1 class="header__logo__h1">
+                KIGURUMI<br>me
+            </h1>
+        </div>
+        
+        <!-- <div class="header__nav-wrapper">
+            <button class="dropdown-btn">
+              <i class="fa fa-caret-down">'\e0fe'</i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">About us</a>
+                <a href="#">Payment</a>
+                <a href="#">Delivery</a>
+                <a href="#">Contacts</a>
+            </div>-->
+            <nav>
+                <ul class="topmenu">
+                    <li>
+                        <ul class="submenu">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Delivery</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <nav class="header__nav">
+                <button class="dropdown-btn">
+                    <i class="icon-menu">'\e0fe'</i>
+                </button>
+                <ul class="header__nav__ul">
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li__a">About</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li__a">Payment</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li__a">Delivery</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li__a">Contacts</a>
+                    </li>
+                    <li class="header__nav__ul__li">
+                        <a class="header__nav__ul__li__a">Guarantee</a>
+                    </li>
+                </ul>
+            </nav> -->
+        
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <section class="main__menu">
+                <div class="main__input-logIn__wrapper">
+                    <input class="main__input-logIn" type="text">
+                    <button class="main__button-logIn">Log in</button>
+                </div>
+                <div class="main__input-register__wrapper">
+                    <input class="main__input-register" type="text">
+                    <button class="main__button-signUp">Sign up</button>
+                </div>
+            </section>
+            <section class="main__slider">
+                <div class="main__slider-wrapper">
+                    <button class="main__slider__button-left"></button>
+                    <button class="main__slider__button-right"></button>
+                </div>
+            </section>
+            <section class="main__shopfront">
+                <button class="main__shopfront__button" onclick="openCity('adult', this, 'red')" id="defaultOpen">for adult</button>
+                <button class="main__shopfront__button" onclick="openCity('kids', this, 'green')">for kids</button>
+                <button class="main__shopfront__button" onclick="openCity('slippers', this, 'blue')">slippers</button>
+
+                <div id="adult" class="main__shopfront__card__wrapper">
+                    <div class="main__shopfront__card">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-2">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-3">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-4">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-5">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-6">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-7">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-8">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                </div>
+                <div id="kids" class="main__shopfront__card__wrapper">
+                    <div class="main__shopfront__card">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-2">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-3">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-4">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-5">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-6">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-7">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-8">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                </div>
+                <div id="slippers" class="main__shopfront__card__wrapper">
+                    <div class="main__shopfront__card">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-2">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-3">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-4">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-5">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-6">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-7">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                    <div class="main__shopfront__card-8">
+                        <button class="main__shopfront__card__button-hart"></button>
+                        <img src="" alt="">
+                        <button class="main__shopfront__card__button-buy"></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__nav__ul">
+                    <li class="footer__nav__ul__li">
+                        <a class="footer__nav__ul__li__a">About</a>
+                    </li>
+                    <li class="footer__nav__ul__li">
+                        <a class="footer__nav__ul__li__a">Payment</a>
+                    </li>
+                    <li class="footer__nav__ul__li">
+                        <a class="footer__nav__ul__li__a">Delivery</a>
+                    </li>
+                    <li class="footer__nav__ul__li">
+                        <a class="footer__nav__ul__li__a">Contacts</a>
+                    </li>
+                    <li class="footer__nav__ul__li">
+                        <a class="footer__nav__ul__li__a">Guarantee</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

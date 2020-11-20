@@ -1,0 +1,293 @@
+// // ---------------RESET CSS--------------------
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
+
+// /* Remove default padding */
+// ul[class],
+// ol[class] {
+//   padding: 0;
+// }
+
+// /* Remove default margin */
+// body,
+// h1,
+// p,
+// ul[class],
+// ol[class],
+// li,
+// figure,
+// figcaption,
+// blockquote,
+// dl,
+// dd {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+// }
+
+// /* Set core body defaults */
+// body {
+//   min-height: 100vh;
+//   scroll-behavior: smooth;
+//   text-rendering: optimizeSpeed;
+//   line-height: 1.5;
+// }
+
+// /* Remove list styles on ul, ol elements with a class attribute */
+// ul[class],
+// ol[class] {
+//   list-style: none;
+// }
+
+// /* A elements that don't have a class get default styles */
+// a {
+//   text-decoration-skip-ink: auto;
+//   text-decoration: none;
+// }
+
+// /* Make images easier to work with */
+// img {
+//   max-width: 100%;
+//   display: block;
+// }
+
+// /* Inherit fonts for inputs and buttons */
+// input,
+// button,
+// textarea,
+// select {
+//   font: inherit;
+//   outline: none;
+// }
+
+// /* Remove all animations and transitions for people that prefer not to see them */
+// @media (prefers-reduced-motion: reduce) {
+//   * {
+//     animation-duration: 0.01ms !important;
+//     animation-iteration-count: 1 !important;
+//     transition-duration: 0.01ms !important;
+//     scroll-behavior: auto !important;
+//   }
+// }
+
+// // -------------------END RESET CSS------------------
+
+
+// html {
+//   font-size: $font-size;
+//   font-family: $font-family;
+//   background: $background-color;
+//   color: $font-color;
+//   max-width: $page-width;
+// }
+
+// body {
+//   margin: 0;
+//   width: 100vw;
+// }
+
+// #root {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   align-self: center;
+//   height: 100vh;
+//   background: no-repeat center center;
+//   background-size: 100%;
+// }
+
+// h1 {
+//   text-align: center;
+//   max-width: 90vw;
+//   font-family: $font-family;
+// }
+// .header{
+//     justify-content: space-between;
+// }
+
+// html {
+//     font-size: 16px;
+// }
+// .body {
+//     height: 100vh;
+// }
+// .header {
+//     width: 100vw;
+//     height: 7vh;
+//     align-items: center;
+// }
+// .header_navBar {
+//     align-items: center;
+// }
+// p {
+//     line-height: 1;
+//     margin: 0 auto;
+// }
+body{
+    margin: 0 auto;
+}
+@media (min-width: 1200px) {
+    .body{
+        width: 1199px;
+        margin: 0 auto;
+
+    }
+}
+
+.btn:hover, .btn:focus, .btn:visited, .btn:active{
+    outline: none !important;
+
+}
+button:hover, button:focus, button:visited, button:active{
+    outline: none !important;
+
+}
+
+
+
+.navbar{
+    background: none;
+}
+.navbar-toggler:hover {
+    background-color: rgb(181, 233, 224);
+}
+// .bg-light{
+//     background-color: white !important;
+// }
+#logo{
+    width: 25%;
+}
+
+
+.slider_wrapper{
+    width: 100%;
+    height: 100%;
+    background: black;
+    // opacity: 0.1;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+@media (min-width: 768px) {
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+}
+
+.jumbotron p:last-child {
+margin-bottom: 0;
+}
+
+.jumbotron h1 {
+font-weight: 300;
+}
+
+.jumbotron .container {
+max-width: 40rem;
+}
+
+
+.card_controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding-top: 0.7vh;
+}
+
+.card_controls_btn{
+    height: 100%;
+    width: 26%;
+    border: 0;
+    line-height: 1.5;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+}
+
+.card_controls_btn:hover, .card_controls_btn:focus, .card_controls_btn:active{
+    border: 0;
+    color: white;
+    font-weight: 700;
+    outline: 0 !important;
+}
+
+#adult{
+    background-color: rgb(61, 226, 199);
+    border-radius: 0 !important;
+    border: none;
+    color: rgb(82, 76, 76);
+    font-weight: 500;
+    outline: none;
+}
+#kids{
+    background-color: rgb(128, 230, 213);
+    border-radius: 0 !important;
+    border: none;
+    color: rgb(82, 76, 76);
+    font-weight: 500;
+    outline: none;
+}
+#slippers{
+    background-color: rgb(181, 233, 224);
+    border-radius: 0 !important;
+    border: none;
+    color: rgb(82, 76, 76);
+    font-weight: 500;
+    outline: none;
+}
+#kids:hover, #kids:focus, #kids:active {
+    color: rgb(255, 255, 255);
+    outline: none !important;
+    border: none !important;
+
+}
+#adult:hover{
+    color: rgb(255, 255, 255);
+}
+#slippers:hover{
+    color: rgb(255, 255, 255);
+}
+
+    
+    #card_btn-BUY:hover,
+    #card_btn-BUY:focus{
+    background-color: rgb(61, 226, 199);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    }
+
+    .button_span:hover{
+        color: rgb(61, 226, 199);
+        font-weight: 900;
+    }
+
+    // #card_btn-quantity:hover,
+    // #card_btn-quantity:focus{
+    //     background: none;
+    // }
+
+// #adult{
+//     background-image: url(../adult_icon.jpg);
+// }
+// #kids{
+//     background-image: url(../kids_icon.jpg);
+// }
+// #slippers{
+//     background-image: url(../slippers_icon.jpg);
+// }
+

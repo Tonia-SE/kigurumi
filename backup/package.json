@@ -1,0 +1,22 @@
+{
+  "name": "kigurumi",
+  "version": "1.0.0",
+  "description": "kigurumi web site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/css/index.scss src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonia-SE/kigurumi.git"    
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonia-SE/kigurumi/issues"
+  },
+  "homepage": "https://github.com/Tonia-SE/kigurumi#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}

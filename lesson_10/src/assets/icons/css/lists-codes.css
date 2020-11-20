@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+ 
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-heart-empty:before { content: '\2661'; } /* '♡' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-mail:before { content: '\2709'; } /* '✉' */
+.icon-truck-1:before { content: '\e02e'; } /* '' */
+.icon-check:before { content: '\e0a6'; } /* '' */
+.icon-sort-numeric-outline:before { content: '\e0ec'; } /* '' */
+.icon-menu:before { content: '\e0fe'; } /* '' */
+.icon-cancel-outline:before { content: '\e108'; } /* '' */
+.icon-cancel:before { content: '\e109'; } /* '' */
+.icon-vkontakte-1:before { content: '\e10e'; } /* '' */
+.icon-volume-off:before { content: '\e117'; } /* '' */
+.icon-volume-low:before { content: '\e119'; } /* '' */
+.icon-arrows-cw:before { content: '\e760'; } /* '' */
+.icon-phone-squared:before { content: '\f098'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
+.icon-help:before { content: '\f128'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-cc-visa:before { content: '\f1f0'; } /* '' */
+.icon-cc-mastercard:before { content: '\f1f1'; } /* '' */
+.icon-copyright:before { content: '\f1f9'; } /* '' */
+.icon-credit-card-alt:before { content: '\f283'; } /* '' */
+.icon-thermometer-3:before { content: '\f2c8'; } /* '' */
+.icon-window-close:before { content: '\f2d3'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-twitter-1:before { content: '\f309'; } /* '' */
+.icon-gift:before { content: '🎁'; } /* '\1f381' */
+.icon-credit-card:before { content: '💳'; } /* '\1f4b3' */
+.icon-truck:before { content: '🚚'; } /* '\1f69a' */
