@@ -1,13 +1,11 @@
 export const nav = document.createElement('div');
-nav.className = 'navbar navbar-expand-lg navbar-light bg-light justify-content-between';
-nav.style.backgroundColor = "rgb(128, 230, 213) !important;";
+nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
 nav.innerHTML = `
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B3%D1%83%D1%80%D1%83%D0%BC%D0%B8" target="blank">
           <img id="logo" src="/assets/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
           KIGURUMI me
         </a>
         
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,10 +22,9 @@ nav.innerHTML = `
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contacts
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://provisy.ru/embassies/embassy-of-china-in-moscow" target="blank">Address</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownMenuNav">
+                <a class="dropdown-item" href="https://www.google.ru/maps" target="blank">Address</a>
                 <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.google.android.dialer&hl=ru&gl=US" target="blank">Support</a>
-                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="https://www.google.com/intl/ru/gmail/about/" target="blank">E-mail</a>
               </div>
             </li>

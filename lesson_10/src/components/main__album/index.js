@@ -182,7 +182,6 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     card.append(cardBody);
     cardBody.append(price);
     cardBody.append(textContent);    
-    // btnGroup.append(price);
     cardBody.append(wrapper);
     quantity.append(minus);
     quantity.append(number);
