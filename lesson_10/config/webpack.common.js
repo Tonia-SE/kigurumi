@@ -30,7 +30,7 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'Финальный проект',
-      favicon: paths.src + '../public/images/favicon.jpg',
+      favicon: paths.src + '/../public/images/favicon.jpg',
       template: paths.src + '/index.html',
       filename: 'index.html',
     }),
