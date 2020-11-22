@@ -1,18 +1,45 @@
 export const slider = document.createElement('section');
 slider.className = 'slider';
 
-slider.innerHTML = `
-<div class="slider_wrapper">
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" >
-    <div class="carousel-item active" >
-      <img class="d-block w-100" src="/assets/images/slider_1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/slider_2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/slider_3.jpg" alt="Third slide">
-    </div>
-  </div>
-</div>`
+const carouselSlide = document.createElement('div');
+carouselSlide.className = "carousel slide";
+carouselSlide.id = "carouselExampleControls";
+carouselSlide.setAttribute("data-ride", "carousel");
+
+const carouselInner = document.createElement('div');
+carouselInner.className = "carousel-inner";
+
+const sliderBtnNext = document.createElement('a');
+sliderBtnNext.innerHTML = 
+`<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>`
+
+const sliderBtnPrev = document.createElement('a');
+sliderBtnPrev.innerHTML = `
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>`
+
+slider.append(carouselSlide);
+carouselSlide.append(carouselInner);
+for(let i = 1; i < 7; i++) {
+  const carouselItem = document.createElement('div');
+  carouselItem.className = "carousel-item";
+  if (i === 1) {
+    carouselItem.classList = "carousel-item active";
+  }
+  const image = document.createElement('img');
+  image.className = "d-block w-100";
+  image.alt = "KIGURUMI";
+  image.src = "/assets/images/slider__" + i + ".jpg"
+  carouselItem.append(image);
+  carouselInner.append(carouselItem);
+}
+carouselInner.append(sliderBtnNext, sliderBtnPrev);
+
+
+
+

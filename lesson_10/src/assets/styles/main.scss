@@ -5,6 +5,12 @@ body{
     .body{
         width: 1199px;
         margin: 0 auto;
+        background-color: rgba(42, 163, 163, 0.3);
+    }
+}
+@media (max-width: 1199px) {
+    .body{
+        background-color: rgba(42, 163, 163, 0.3);
     }
 }
 
@@ -14,22 +20,61 @@ body{
 
 //------------------------HEADER
 .navbar{
-    background-color:  rgb(128, 230, 213) !important;
+    background-color:  $background-color-1;
 }
-.navbar-toggler:hover {
-    background-color: rgb(181, 233, 224);
+.navbar-brand{
+    margin-right: 14%;
+    font-size: 1.5rem !important;
+    color: $color-1;
+}
+.navbar-brand:hover{
+    color: $color-2;
 }
 #logo{
     width: 25%;
+}
+#navbarSupportedContent{
+    font-size: 1.2rem !important;
+}
+#navbarSupportedContent a:hover{
+    color: $color-2;
+    background-color:  $background-color-1;
+}
+#dropdownMenuNav{
+    background-color:  $background-color-1;
+}
+#dropdownMenuNav a:hover{
+    color:  $color-2;
+}
+@media (max-width: 441px) {
+    .navbar-brand{
+        margin-right: 0;
+    }
+}
+@media (max-width: 381px) {
+    #logo{
+        width: 0;
+    }
 }
 
 
 
 // ----------------------SLIDER
-.slider_wrapper{
-    width: 100%;
-    height: 100%;
-    background: black;
+
+.carousel-control-next, .carousel-control-prev{
+    transform: scale(1.5, 2.5);
+    opacity: 0.9 !important;
+} 
+.carousel-control-next:hover, .carousel-control-prev:hover{
+    transform: scale(2.5, 3.5);
+} 
+.carousel-item h1 {
+    position: absolute;
+    margin: 0;
+    color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -41,69 +86,28 @@ body{
     justify-content: flex-start;
 }
 #adult{
-    background-color: rgb(61, 226, 199);
-    border-radius: 0 !important;
-    border: none;
-    color: black;
-    outline: none;
-    margin: 0;
+    background-color: $background-color-1;
+    @include id_album();
 }
 #kids{
-    background-color: rgb(128, 230, 213);
-    border-radius: 0 !important;
-    border: none;
-    color: black;
-    outline: none;
-    margin: 0;
+    background-color: $background-color-2;
+    @include id_album();
 }
 #slippers{
-    background-color: rgb(181, 233, 224);
-    border-radius: 0 !important;
-    border: none;
-    color: black;
-    outline: none;
-    margin: 0;
+    background-color: $background-color-3;
+    @include id_album();
 }
 #kids:hover, #kids:focus, #kids:active {
-    color: rgb(255, 255, 255);
+    color: $color-2;
     outline: none !important;
     border: none !important;
 }
 #adult:hover{
-    color: rgb(255, 255, 255);
+    color: $color-2;
 }
 #slippers:hover{
-    color: rgb(255, 255, 255);
+    color: $color-2;
 }
-.card_controls{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    padding-top: 0.7vh;
-}
-.card_controls_btn{
-    height: 100%;
-    width: 26%;
-    border: 0;
-    line-height: 1.5;
-    padding-top: 0.7vh;
-    padding-bottom: 0.7vh;
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-}
-.card_controls_btn:hover, .card_controls_btn:focus, .card_controls_btn:active{
-    border: 0;
-    color: white;
-    font-weight: 700;
-    outline: 0 !important;
-}
-
-
 
 
 
@@ -112,12 +116,7 @@ body{
 .btn {
     border-radius: 0;
 }
-.btn:hover, .btn:focus, .btn:visited, .btn:active, .btn:target{
-    outline: none !important;
-    box-shadow: none !important;
-}
-button:hover, button:focus, button:visited, button:active, button:target{
-    outline: none !important;
+button:hover, button:focus, button:visited, button:active{
     box-shadow: none !important;
     cursor: pointer;
 }
@@ -129,12 +128,11 @@ small:hover, small:focus, small:visited, small:active, small:target{
 
 
 //------------------------ALBUM
-
 .jumbotron {
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-bottom: 0;
-    background-color: #fff;
+    background-color: $color-2;
 }
 @media (min-width: 768px) {
     .jumbotron {
@@ -146,41 +144,68 @@ small:hover, small:focus, small:visited, small:active, small:target{
     margin-bottom: 0;
 }
 .jumbotron h1 {
-    font-weight: 300;
+    font-weight: 400;
 }
 .jumbotron .container {
     max-width: 40rem;
 }
-// .dropdown:hover, .dropdown:focus, .dropdown:visited, .dropdown:active, .dropdown:target{
-//     background-color: rgb(61, 226, 199) !important;
-// }
 #card_btn-BUY:hover,
 #card_btn-BUY:focus{
-    background-color: rgb(61, 226, 199);
-    color: rgb(255, 255, 255);
+    background-color: $color-3;
+    color: $color-2;
     font-weight: 400;
-    border-color: rgb(61, 226, 199);
+    border-color: $color-3;
 }
 .button_span:hover{
-    color: rgb(61, 226, 199);
+    color: $color-3;
 }
 #card_btn-sizes:hover,
 #card_btn-sizes:focus{
-    background-color: rgb(61, 226, 199);
-    color: rgb(255, 255, 255);
+    background-color: $color-3;
+    color: $color-2;
     font-weight: 400;
-    border-color: rgb(61, 226, 199);
+    border-color: $color-3;
 }
-
-
-
+#card_btn-sizes{
+    background-color: $color-2 !important;
+}
 //--------------------------- Overright default bootstrap bg colors to album
 .bg-light {
-    background-color: rgb(61, 226, 199) !important;
+    background-color: $background-color-1;
 }
 .bg-danger {
-    background-color: rgb(128, 230, 213) !important;
+    background-color: $background-color-2;
 }
 .bg-primary {
-    background-color: rgb(181, 233, 224) !important;
+    background-color: $background-color-3;
+}
+
+
+
+
+// ----------------FOOTER
+.page-footer {
+    background-color: rgba(44, 138, 138, 0.5) !important;
+}
+.list-unstyled a{
+    text-decoration: none !important;
+    color: $color-1;
+}
+.list-unstyled a:hover{
+    text-decoration: none !important;
+    color: $color-2;
+}
+@media (max-width: 768px) {
+    .container-fluid{
+        padding: 0 20px 0 20px !important;
+    }
+    #text-column-1{
+        padding: 0 20px 0 20px !important;
+    }
+    #text-column-2{
+        padding: 0 20px 0 20px !important;
+    }
+    #text-column-3{
+        padding: 0 20px 0 20px !important;
+    }
 }
