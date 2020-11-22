@@ -2,7 +2,7 @@ export const nav = document.createElement('div');
 nav.className = 'navbar navbar-expand-lg navbar-light bg-light';
 nav.innerHTML = `
         <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B3%D1%83%D1%80%D1%83%D0%BC%D0%B8" target="blank">
-          <img id="logo" src="/assets/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          <img id="logo" src="./assets/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
           KIGURUMI me
         </a>
         
