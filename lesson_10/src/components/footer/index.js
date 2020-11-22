@@ -27,7 +27,7 @@ footer.innerHTML= `
             <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B3%D1%83%D1%80%D1%83%D0%BC%D0%B8" target="blank">About us: we are awesome!!!</a>
           </li>
           <li>
-            <a href="https://boxberry.ru/" target="blank">Delivery: Werever you wish</a>
+            <a href="https://boxberry.ru/" target="blank">Delivery: Anywhere you wish</a>
           </li>
           <li>
             <a href="https://pay.google.com/intl/ru_ru/about/" target="blank">Payment: by card</a>
@@ -39,7 +39,7 @@ footer.innerHTML= `
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-left py-3" style="padding-left: 50px !important">© 2020 Copyright:
+  <div class="footer-copyright text-left py-3">© 2020 Copyright:
     <a href="https://www.100sp.ru/magazine/view/55" target="blank">https://www.100sp.ru/magazine/view/55</a>
   </div>
 </footer>`

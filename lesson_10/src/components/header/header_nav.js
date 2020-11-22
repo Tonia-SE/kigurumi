@@ -35,7 +35,7 @@ nav.innerHTML = `
               <a class="nav-link" href="#">Log in</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Register</a>
+              <a class="nav-link" href="#">Sign up</a>
             </li>
           </ul>
         </div>`;
