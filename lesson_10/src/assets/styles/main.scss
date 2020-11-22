@@ -184,6 +184,9 @@ small:hover, small:focus, small:visited, small:active, small:target{
 
 
 // ----------------FOOTER
+.footer-copyright{
+    padding-left: 50px !important;
+}
 .page-footer {
     background-color: rgba(44, 138, 138, 0.5) !important;
 }
@@ -196,6 +199,9 @@ small:hover, small:focus, small:visited, small:active, small:target{
     color: $color-2;
 }
 @media (max-width: 768px) {
+    .footer-copyright{
+        padding-left: 15px !important;
+    }
     .container-fluid{
         padding: 0 20px 0 20px !important;
     }
