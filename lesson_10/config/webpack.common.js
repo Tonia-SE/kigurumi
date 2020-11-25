@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
-    publicPath: '/kigurumi/lesson_10/build/',
+    publicPath: '/',
   },
 
   plugins: [

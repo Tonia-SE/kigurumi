@@ -27,7 +27,7 @@ footer.innerHTML= `
             <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B3%D1%83%D1%80%D1%83%D0%BC%D0%B8" target="blank">About us: we are awesome!!!</a>
           </li>
           <li>
-            <a href="https://boxberry.ru/" target="blank">Delivery: Anyway you wish</a>
+            <a href="https://boxberry.ru/" target="blank">Delivery: Anywhere you wish</a>
           </li>
           <li>
             <a href="https://pay.google.com/intl/ru_ru/about/" target="blank">Payment: by card</a>

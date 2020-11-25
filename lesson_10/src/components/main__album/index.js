@@ -167,12 +167,12 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     // heart.style.color = "red";
     heart.style.fontSize = "1.5rem";
     heart.id = "heart";
-    heart.textContent = '♡'; //♥
+    heart.textContent = '☆'; //♥
     heart.addEventListener('click', (event) => {
-      if (event.target.textContent == '♡') {
-        heart.textContent = '♥';
+      if (event.target.textContent == '☆') {
+        heart.textContent = '★';
       } else {
-        heart.textContent = '♡';
+        heart.textContent = '☆';
       }
     })
     
