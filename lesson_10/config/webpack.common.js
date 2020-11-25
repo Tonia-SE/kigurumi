@@ -29,7 +29,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      title: 'Финальный проект',
+      title: 'Kigurumi me',
       favicon: paths.src + '/../public/images/favicon.jpg',
       template: paths.src + '/index.html',
       filename: 'index.html',
