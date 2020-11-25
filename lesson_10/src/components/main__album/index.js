@@ -66,6 +66,7 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     const price = document.createElement('small');
     price.className = "text-muted price";
     price.style.fontSize = '2rem';
+    price.id = "price";
     price.textContent = element.price;
 
     const buyNow = document.createElement('button');
@@ -85,7 +86,6 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     minus.className = "button_span";
     minus.id = "left";
     minus.setAttribute('cardid', element.id)
-    minus.style.paddingRight = '10px';
     minus.textContent = "-";
 
     minus.addEventListener('click', (event) => {
@@ -107,7 +107,6 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     const plus = document.createElement('span');
     plus.className = "button_span";
     plus.id = "right";
-    plus.style.paddingLeft = '10px';
     plus.setAttribute('cardid', element.id)
     plus.textContent = "+";
 
@@ -129,6 +128,7 @@ export function createCards(cardsList, bgColor = 'bg-light') {
 
     const number = document.createElement('span');
     number.textContent = "0";
+    number.id = "number";
     number.setAttribute('qty', 'true')
     number.setAttribute('cardid', element.id)
 
@@ -163,7 +163,7 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     const heart = document.createElement('small');
     heart.className = "text-muted";
     heart.style.margin = "6%";
-    heart.style.color = "red";
+    // heart.style.color = "red";
     heart.style.fontSize = "1.5rem";
     heart.id = "heart";
     heart.textContent = '♡'; //♥
