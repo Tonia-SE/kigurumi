@@ -172,7 +172,6 @@ small:hover, small:focus, small:visited, small:active, small:target{
 .jumbotron .container {
     max-width: 40rem;
 }
-
 #card_btn-BUY:hover,
 #card_btn-BUY:focus{
     background-color: $color-3;
@@ -180,11 +179,20 @@ small:hover, small:focus, small:visited, small:active, small:target{
     font-weight: 400;
     border-color: $color-3;
 }
-#left{
+.btn #left{
     padding-right: 10px;
+    font-weight: 500 !important;
 }
-#right{
+.btn #right{
     padding-left: 10px;
+    font-weight: 500 !important;
+    font-size: 1rem;
+}
+#right:hover, #right:target, #right:focus{
+    color: rgb(60, 201, 211) !important;
+}
+#left:hover, #left:target, #left:focus{
+    color: rgb(60, 201, 211) !important;
 }
 .button_span:hover{
     color: $color-3;
@@ -198,6 +206,7 @@ small:hover, small:focus, small:visited, small:active, small:target{
 }
 #card_btn-sizes{
     background-color: $color-2 !important;
+    line-height: 1.8;
 }
 #price{
     color: #6c757d !important;
@@ -205,6 +214,10 @@ small:hover, small:focus, small:visited, small:active, small:target{
 #heart{
     color: rgb(60, 201, 211) !important;
     text-align: right !important;
+    font-size: 2rem !important;
+}
+#sizeDroppdownMenu{
+    background-color: rgb(224, 253, 245) !important;
 }
 //--------------------------- Overright default bootstrap bg colors to album
 .bg-light {
@@ -246,6 +259,7 @@ small:hover, small:focus, small:visited, small:active, small:target{
         padding: 0 20px 0 20px !important;
     }
 }
+
 
 
 
