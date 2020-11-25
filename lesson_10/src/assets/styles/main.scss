@@ -30,8 +30,18 @@ body{
 .navbar-brand:hover{
     color: $color-2;
 }
+.navbar-collapse  {
+    justify-content: flex-end !important;
+    padding-right: 10px;
+}
+.mr-auto{
+    margin-right: 0 !important;
+}
 #logo{
     width: 25%;
+}
+#icon:hover, #icon:target, #icon:focus {
+    border: 1.5px solid $color-2;
 }
 #navbarSupportedContent{
     font-size: 1.2rem !important;
@@ -39,6 +49,9 @@ body{
 #navbarSupportedContent a:hover{
     color: $color-2;
     background-color:  $background-color-1;
+}
+.dropdown-menu{
+    border: none !important;
 }
 #dropdownMenuNav{
     background-color:  $background-color-1;
@@ -56,6 +69,10 @@ body{
         width: 0;
     }
 }
+.text-muted{
+    color: rgb(255, 0, 0) !important;
+}
+
 
 
 
@@ -118,6 +135,7 @@ body{
 }
 button:hover, button:focus, button:visited, button:active{
     box-shadow: none !important;
+    outline: none !important;
     cursor: pointer;
 }
 small:hover, small:focus, small:visited, small:active, small:target{
@@ -140,6 +158,11 @@ small:hover, small:focus, small:visited, small:active, small:target{
         padding-bottom: 6rem;
     }
 }
+@media (max-width: 650px) {
+    .mb-4 {
+        margin: 4% 10% 4% 10% !important;
+    }
+}
 .jumbotron p:last-child {
     margin-bottom: 0;
 }
@@ -149,12 +172,19 @@ small:hover, small:focus, small:visited, small:active, small:target{
 .jumbotron .container {
     max-width: 40rem;
 }
+
 #card_btn-BUY:hover,
 #card_btn-BUY:focus{
     background-color: $color-3;
     color: $color-2;
     font-weight: 400;
     border-color: $color-3;
+}
+#left{
+    padding-right: 10px;
+}
+#right{
+    padding-left: 10px;
 }
 .button_span:hover{
     color: $color-3;
@@ -168,6 +198,13 @@ small:hover, small:focus, small:visited, small:active, small:target{
 }
 #card_btn-sizes{
     background-color: $color-2 !important;
+}
+#price{
+    color: #6c757d !important;
+}
+#heart{
+    color: rgb(60, 201, 211) !important;
+    text-align: right !important;
 }
 //--------------------------- Overright default bootstrap bg colors to album
 .bg-light {
@@ -184,9 +221,6 @@ small:hover, small:focus, small:visited, small:active, small:target{
 
 
 // ----------------FOOTER
-.footer-copyright{
-    padding-left: 50px !important;
-}
 .page-footer {
     background-color: rgba(44, 138, 138, 0.5) !important;
 }
@@ -199,9 +233,6 @@ small:hover, small:focus, small:visited, small:active, small:target{
     color: $color-2;
 }
 @media (max-width: 768px) {
-    .footer-copyright{
-        padding-left: 15px !important;
-    }
     .container-fluid{
         padding: 0 20px 0 20px !important;
     }
@@ -214,4 +245,34 @@ small:hover, small:focus, small:visited, small:active, small:target{
     #text-column-3{
         padding: 0 20px 0 20px !important;
     }
+}
+
+
+
+// --------------------MODAL WINDOWS
+.modal-footer{
+    border-top: none;
+}
+.modal-header{
+    border-bottom: none;
+}
+#signUpBtn{
+    background-color: $background-color-1;
+    border-color: $background-color-1;
+    opacity: 0.7;
+}
+#loginBtn{
+    background-color: $background-color-1;
+    border-color: $background-color-1;
+    opacity: 0.7;
+}
+#signUpBtn:hover, #signUpBtn:target, #signUpBtn:focus{
+    background-color: $background-color-1;
+    border-color: $background-color-1;
+    opacity: 1;
+}
+#loginBtn:hover, #loginBtn:target, #loginBtn:focus{
+    background-color: $background-color-1;
+    border-color: $background-color-1;
+    opacity: 1;
 }

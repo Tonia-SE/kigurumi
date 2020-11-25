@@ -34,7 +34,7 @@ for(let i = 1; i < 7; i++) {
   const image = document.createElement('img');
   image.className = "d-block w-100";
   image.alt = "KIGURUMI";
-  image.src = "./assets/images/slider__" + i + ".jpg"
+  image.src = "/assets/images/slider__" + i + ".jpg"
   carouselItem.append(image);
   carouselInner.append(carouselItem);
 }
