@@ -86,7 +86,7 @@ export function createCards(cardsList, bgColor = 'bg-light') {
     minus.className = "button_span";
     minus.id = "left";
     minus.setAttribute('cardid', element.id)
-    minus.textContent = "-";
+    minus.textContent = "–";
 
     minus.addEventListener('click', (event) => {
       const cardId = event.target.getAttribute('cardid');
@@ -148,6 +148,7 @@ export function createCards(cardsList, bgColor = 'bg-light') {
 
     const sizeMenu = document.createElement('div')
     sizeMenu.className = "dropdown-menu";
+    sizeMenu.id = "sizeDroppdownMenu"
     sizeMenu.setAttribute("aria-labelledby", "dropdownMenuButton");
 
     element.sizes.forEach(size => {

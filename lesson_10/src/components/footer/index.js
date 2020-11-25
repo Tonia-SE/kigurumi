@@ -1,7 +1,7 @@
-export const footer = document.createElement('div');
+export const footer = document.createElement('footer');
+footer.className = "page-footer font-small blue pt-4";
 
 footer.innerHTML= `
-<footer class="page-footer font-small blue pt-4" >
   <div class="container-fluid text-center text-md-left" style="padding-left: 50px">
     <div class="row">
       <div class="col-md-6 mt-md-0 mt-3" id="text-column-1">
@@ -39,9 +39,8 @@ footer.innerHTML= `
       </div>
     </div>
   </div>
-  <div class="footer-copyright text-left py-3" style="padding-left: 50px !important">© 2020 Copyright:
+  <div class="footer-copyright text-left py-3" style="padding-left:4.3%">© 2020 Copyright:
     <a href="https://www.100sp.ru/magazine/view/55" target="blank">https://www.100sp.ru/magazine/view/55</a>
-  </div>
-</footer>`
+  </div>`
 
 
